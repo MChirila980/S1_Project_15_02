@@ -5,8 +5,8 @@
    Tutorial 13
    Case Problem 2
 
-   Author: 
-   Date:   
+   Author: Melinda Chirila
+   Date:   4/19/2019
    
    Filename: dl_expenses.js
    
