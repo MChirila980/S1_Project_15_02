@@ -33,7 +33,7 @@
 //empty function
 window.addEventListener("load", function () {
       var changingCells = document.querySelectorAll("table#travelExp input.sum");
-    
+
       //this will add the event listeners to the array
       for (var i = 0; i < changingCells.length; i++) {
             changingCells[i].addEventListener("change", calcExp);
@@ -84,12 +84,15 @@ function calcExp() {
 
 
 function formatNumber(val, decimals) {
-   return val.toLocaleString(undefined, 
-{minimumFractionDigits: decimals, 
-maximumFractionDigits: decimals});
+      return val.toLocaleString(undefined, {
+            minimumFractionDigits: decimals,
+            maximumFractionDigits: decimals
+      });
 }
 
 function formatUSCurrency(val) {
-return val.toLocaleString('en-US', 
-{style: "currency", currency: "USD"} );
+      return val.toLocaleString('en-US', {
+            style: "currency",
+            currency: "USD"
+      });
 }
